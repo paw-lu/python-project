@@ -16,6 +16,8 @@ requests = "^2.22.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.3.5"
+coverage = {extras = ["toml"], version = "^5.0.3"}
+pytest-cov = "^2.8.1"
 
 [tool.poetry.scripts]
 python-project = "python_project.console:main"
@@ -23,3 +25,14 @@ python-project = "python_project.console:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["python_project"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80
