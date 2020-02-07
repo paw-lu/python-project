@@ -6,9 +6,12 @@ import requests
 
 from . import __version__
 
-country = locale.getlocale()[0].split("_")[0]
-# API_URL = f"https://{country}.wikipedia.org/api/rest_v1/page/random/summary"
-API_URL = f"https://{country}.wikipedia.org/api/rest_v1/pagy"
+location_info = locale.getlocale()[0]
+if location_info is not None:
+    country = location_info.split("_")[0]
+else:
+    country = "en"
+API_URL = f"https://{country}.wikipedia.org/api/rest_v1/page/random/summary"
 
 @click.command()
 @click.version_option(version=__version__)
