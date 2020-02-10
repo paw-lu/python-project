@@ -4,6 +4,7 @@ import click
 
 from . import __version__, wikipedia
 
+
 @click.command()
 @click.option(
     "--language",
