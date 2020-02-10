@@ -11,11 +11,10 @@ A Python project template.
 - `poetry add click` to add user package
 - `poetry add --dev` to add dev package
 
-
 ## Testing
 
 - `poetry run pytest -cov` To run test with coverage
 - `nox` To run multi-environment tests
 - `nox -r` To reuse environments
-- `nox -s tests-3.8` To run tests for specific versions
+- `nox -s tests-3.7` To run tests for specific versions
 - `nox -- -m e2e` to run end-to-end tests
