@@ -2,6 +2,16 @@
 
 A Python project template.
 
+## Setup
+
+- `pyenv local 3.8.1 3.7.6` To specify Python versions
+- `poetry init --no-interaction` to create `pyproject.toml`
+- `poetry install` to install package in virtual environment
+- `poetry run` to run scrips in `pyproject.toml` and processes in virtual environment
+- `poetry add click` to add user package
+- `poetry add --dev` to add dev package
+
+
 ## Testing
 
 - `poetry run pytest -cov` To run test with coverage
