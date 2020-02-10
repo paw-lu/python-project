@@ -23,3 +23,5 @@ A Python project template.
 ## Linting
 
 - `nox -rs lint` – run linter
+- `nox -rs black` – run Black formatter
+- `nox` — will not run Black
