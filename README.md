@@ -25,3 +25,4 @@ A Python project template.
 - `nox -rs lint` – run linter
 - `nox -rs black` – run Black formatter
 - `nox` — will not run Black
+- `pre-commit run --all-files` manually triggers hooks
