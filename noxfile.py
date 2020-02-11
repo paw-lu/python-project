@@ -89,3 +89,14 @@ def mypy(session: Session) -> None:
     args = session.posargs or locations
     install_with_constraints(session, "mypy")
     session.run("mypy", *args)
+
+
+# TODO: Update pytype
+# As of now (2-11-2020), pytype does not yet support 3.8
+# https://github.com/google/pytype/issues/440
+@nox.session(python=["3.7"])
+def pytype(session):
+    """Run the static type checker."""
+    args = session.posargs or ["--disable=import-error", *locations]
+    install_with_constraints(session, "pytype")
+    session.run("pytype", *args)
