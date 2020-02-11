@@ -30,6 +30,7 @@ def tests(session):
     session.run("pytest", *args)
 
 
+# TODO: Add more flake8 plugins
 @nox.session(python=["3.8", "3.7"])
 def lint(session):
     args = session.posargs or locations
