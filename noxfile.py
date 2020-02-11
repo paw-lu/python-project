@@ -48,6 +48,7 @@ def lint(session):
         "flake8-bugbear",
         "flake8-isort",
         "pytest",
+        "pytest-mock",
         "toml",
     )
     session.run("flake8", *args)
@@ -59,7 +60,7 @@ def sort(session):
     # isort needs to see all installed packages that are imported
     session.run("poetry", "install", "--no-dev", external=True)
     # Manually add any non dev packages which are imported, like pytest
-    install_with_constraints(session, "pytest", "toml")
+    install_with_constraints(session, "pytest", "pytest-mock", "toml")
     session.run("isort", "-rc", *args)
 
 
