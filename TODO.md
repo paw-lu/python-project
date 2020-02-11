@@ -5,7 +5,8 @@
   - Poetry
   - Nox lint sessions
 
-- Add more pre-commit hooks
+- Add more pre-commit hooks (like Prettier)
+- Add Dependabot
 
 ## Updates
 
