@@ -27,3 +27,9 @@ A Python project template.
 - `nox -rs black` – run Black formatter
 - `nox` — will not run Black
 - `pre-commit run --all-files` — manually triggers hooks
+
+## Type hints
+
+- `nox -rs mypy` — check types based on hints
+- `nox -rs pytype` — infer types
+- `nox -rs typeguard` — check types at runtime
