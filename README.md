@@ -10,6 +10,7 @@ A Python project template.
 - `poetry run` – run scrips in `pyproject.toml` and processes in virtual environment
 - `poetry add click` – add user package
 - `poetry add --dev` – add dev package
+- `poetry add --dev --python=3.7 pytype` — add version specific package
 
 ## Testing
 
@@ -25,4 +26,4 @@ A Python project template.
 - `nox -rs lint` – run linter
 - `nox -rs black` – run Black formatter
 - `nox` — will not run Black
-- `pre-commit run --all-files` manually triggers hooks
+- `pre-commit run --all-files` — manually triggers hooks
