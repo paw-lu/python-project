@@ -37,3 +37,4 @@ A Python project template.
 ## Documentation
 
 - `nox --list-sessions` – overview of Nox tasks
+- `nox -rs xdoctest` — test document examples
