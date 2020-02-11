@@ -1,3 +1,4 @@
+"""Client for the Wikipedia REST API."""
 from dataclasses import dataclass
 
 import click
@@ -8,6 +9,13 @@ import requests
 
 @dataclass
 class Page:
+    """Page resource.
+
+    Attributes:
+        title: The title of the Wikipedia page.
+        extract: A plain text summary.
+    """
+
     title: str
     extract: str
 
@@ -18,7 +26,20 @@ schema = desert.schema(Page, meta={"unknown": marshmallow.EXCLUDE})
 API_URL = "https://{language}.wikipedia.org/api/rest_v1/page/random/summary"
 
 
-def random_page(language: str = "en") -> Page:  # JSON hard to express as typ3
+def random_page(language: str = "en") -> Page:
+    """Return a random page.
+
+    Args:
+        language: The Wikipedia language edition. By default, the English
+            Wikipedia is used ("en").
+
+    Returns:
+        A page resource.
+
+    Raises:
+        ClickException: The HTTP request failed or the HTTP response
+            contained an invalid body.
+    """
     url = API_URL.format(language=language)
     try:
         with requests.get(url) as response:
