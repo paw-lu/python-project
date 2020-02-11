@@ -1,5 +1,8 @@
 # Obtained from https://github.com/github/gitignore/blob/master/Python.gitignore
 
+# pytype
+.pytype/
+
 # Scratch
 scratch.*
 
