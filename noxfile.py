@@ -46,6 +46,7 @@ def lint(session: Session) -> None:
     # Manually add non dev packages which are imported, like pytest
     install_with_constraints(
         session,
+        "darglint",
         "flake8",
         "flake8-annotations",
         "flake8-bandit",
