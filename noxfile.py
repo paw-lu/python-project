@@ -14,8 +14,15 @@ def tests(session):
 @nox.session(python=["3.8", "3.7"])
 def lint(session):
     args = session.posargs or locations
-    session.install("flake8", "flake8-black", "flake8-isort")
+    session.run("poetry", "install", external=True)
     session.run("flake8", *args)
+
+
+@nox.session(python="3.8")
+def sort(session):
+    args = session.posargs or locations
+    session.run("poetry", "install", external=True)
+    session.run("isort", "-rc", *args)
 
 
 @nox.session(python="3.8")
