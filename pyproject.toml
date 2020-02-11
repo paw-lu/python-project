@@ -28,7 +28,6 @@ ipykernel = "^5.1.4"
 isort = "^4.3.21"
 flake8 = "^3.7.9"
 flake8-black = "^0.1.1"
-flake8-isort = "^2.8.0"
 toml = "^0.10.0"
 flake8-bugbear = "^20.1.4"
 flake8-bandit = "^2.1.2"
@@ -38,6 +37,7 @@ mypy = "^0.761"
 # TODO: Update pytype
 pytype = {version = "^2020.2.6", python = "3.7"}
 typeguard = "^2.7.1"
+flake8-isort = "^2.8.0"
 flake8-annotations = "^2.0.0"
 
 [tool.coverage.paths]
