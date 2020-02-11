@@ -33,6 +33,7 @@ flake8-bandit = "^2.1.2"
 black = "^19.10b0"
 safety = "^1.8.5"
 mypy = "^0.761"
+pytype = {version = "^2020.2.6", python = "3.7"}
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
