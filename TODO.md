@@ -7,6 +7,7 @@
 
 - Add more pre-commit hooks (like Prettier)
 - Add Dependabot
+- Add some more mypy options
 
 ## Updates
 
