@@ -33,3 +33,7 @@ A Python project template.
 - `nox -rs mypy` — check types based on hints
 - `nox -rs pytype` — infer types
 - `nox -rs typeguard` — check types at runtime
+
+## Documentation
+
+- `nox --list-sessions` – overview of Nox tasks
