@@ -8,6 +8,7 @@
 - Add more pre-commit hooks (like Prettier)
 - Add Dependabot
 - Add some more mypy options
+- Add doc8 pre-commit
 
 ## Updates
 
