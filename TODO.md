@@ -14,3 +14,4 @@
 
 - Update pytype to 2.8
 - Update doc linters to numpy
+- Switch isort to black_isort when (if?) it releases
