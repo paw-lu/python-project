@@ -47,7 +47,6 @@ def lint(session: Session) -> None:
     install_with_constraints(
         session,
         "darglint",
-        "isort[pyproject]",
         "flake8",
         "flake8-annotations",
         "flake8-bandit",
