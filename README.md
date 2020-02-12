@@ -1,7 +1,7 @@
 # Python project
 
 [![Tests](https://github.com/pscosta5/python-project/workflows/Tests/badge.svg)](https://github.com/pscosta5/python-project/actions?workflow=Tests)
-[![Codecov](https://codecov.io/gh/<your-username>/hypermodern-python/branch/master/graph/badge.svg)](https://codecov.io/gh/<your-username>/hypermodern-python)
+[![Codecov](https://codecov.io/gh/pscosta5/python-project/branch/master/graph/badge.svg)](https://codecov.io/gh/pscosta5/python-project)
 
 A Python project template.
 
@@ -44,5 +44,6 @@ A Python project template.
 - `nox -rs docs` – generate documentation
 
 ## CI-CD
+
 - [GitHub Actions](https://github.com/features/actions)
 - [Codecov](https://codecov.io/)
