@@ -679,6 +679,18 @@ six = "*"
 
 [[package]]
 category = "dev"
+description = "A flake8 plugin to lint pandas in an opinionated way"
+name = "pandas-vet"
+optional = false
+python-versions = "*"
+version = "0.2.2"
+
+[package.dependencies]
+attrs = "*"
+flake8 = ">3.0.0"
+
+[[package]]
+category = "dev"
 description = "A Python Parser"
 name = "parso"
 optional = false
@@ -1263,7 +1275,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools"]
 
 [metadata]
-content-hash = "a846c02352eac866a897b1401af73c2cff5296c05f53548650e317b0e5d84637"
+content-hash = "0a8b25356fc73760279664f53e18ac9301ea4a83cc09cac4c9faa69d8a751246"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -1558,6 +1570,10 @@ ninja = [
 packaging = [
     {file = "packaging-20.1-py2.py3-none-any.whl", hash = "sha256:170748228214b70b672c581a3dd610ee51f733018650740e98c7df862a583f73"},
     {file = "packaging-20.1.tar.gz", hash = "sha256:e665345f9eef0c621aa0bf2f8d78cf6d21904eef16a93f020240b704a57f1334"},
+]
+pandas-vet = [
+    {file = "pandas-vet-0.2.2.tar.gz", hash = "sha256:0a316c3edaaa1bcd772bfaea0e8d2b2aa409b740198746a2b60f2007b313f42e"},
+    {file = "pandas_vet-0.2.2-py3-none-any.whl", hash = "sha256:961235064ebe5b38ca9c3f45961fdce61796a01aea1f07b06b67f6b359aabea2"},
 ]
 parso = [
     {file = "parso-0.6.1-py2.py3-none-any.whl", hash = "sha256:951af01f61e6dccd04159042a0706a31ad437864ec6e25d0d7a96a9fbb9b0095"},

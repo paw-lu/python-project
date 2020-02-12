@@ -55,6 +55,7 @@ def lint(session: Session) -> None:
         "flake8-docstrings",
         "flake8-isort",
         "flake8-rst-docstrings",
+        "pandas-vet",
         "pytest",
         "pytest-mock",
     )
