@@ -16,9 +16,13 @@
 - Add doc8 pre-commit
 - Switch isort to isort[pyproject] when flake8-isort can pick up on those settings
 - Slowly move everything to pyproject as support is added
-    - isort
-    - mypy
+
+  - isort
+  - mypy
+
 - Add doc8 to dox
+- Try to upload to Read the Doc via a GitHub action
+  [once supported](https://github.com/readthedocs/readthedocs.org/issues/1083).
 
 ## Updates
 
