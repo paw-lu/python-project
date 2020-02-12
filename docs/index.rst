@@ -6,6 +6,7 @@ My Python Project
    :maxdepth: 1
 
    license
+   reference
 
 An example Python project.
 
