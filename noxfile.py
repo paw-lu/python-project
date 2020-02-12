@@ -61,7 +61,7 @@ def lint(session: Session) -> None:
     session.run("flake8", *args)
 
 
-@nox.session(python="3.8")
+@nox.session(python=["3.8", "3.7"])
 def doc8(session: Session) -> None:
     """Lint rst files using doc8."""
     args = session.posargs or ["docs"]
