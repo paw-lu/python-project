@@ -6,8 +6,8 @@ import nox
 from nox.sessions import Session
 
 package = "python_project"
-locations = "src", "tests", "noxfile.py"
-nox.options.sessions = "lint", "mypy", "pytype", "safety", "tests"
+locations = "src", "tests", "noxfile.py", "docs/conf.py"
+nox.options.sessions = "lint", "doc8", "mypy", "pytype", "safety", "tests", "xdoctest"
 
 
 def install_with_constraints(session: Session, *args: str, **kwargs: Any) -> None:
@@ -59,6 +59,14 @@ def lint(session: Session) -> None:
         "toml",
     )
     session.run("flake8", *args)
+
+
+@nox.session(python="3.8")
+def doc8(session: Session) -> None:
+    """Lint rst files using doc8."""
+    args = session.posargs or ["docs"]
+    install_with_constraints(session, "doc8", "pygments")
+    session.run("doc8", *args)
 
 
 @nox.session(python="3.8")
@@ -132,3 +140,10 @@ def xdoctest(session: Session) -> None:
     session.run("poetry", "install", "--no-dev", external=True)
     install_with_constraints(session, "xdoctest", "pygments")
     session.run("python", "-m", "xdoctest", package, *args)
+
+
+@nox.session(python="3.8")
+def docs(session: Session) -> None:
+    """Build the documentation."""
+    install_with_constraints(session, "Sphinx")
+    session.run("sphinx-build", "docs", "docs/build")
