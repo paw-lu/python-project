@@ -3,6 +3,8 @@
 [![Tests](https://github.com/pscosta5/python-project/workflows/Tests/badge.svg)](https://github.com/pscosta5/python-project/actions?workflow=Tests)
 [![Codecov](https://codecov.io/gh/pscosta5/python-project/branch/master/graph/badge.svg)](https://codecov.io/gh/pscosta5/python-project)
 [![PyPI](https://img.shields.io/pypi/v/python-project.svg)](https://pypi.org/project/hypermodern-python/)
+[![Read the Docs](https://readthedocs.org/projects/hypermodern-python/badge/)](https://hypermodern-python.readthedocs.io/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A Python project template.
 

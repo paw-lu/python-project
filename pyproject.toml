@@ -8,6 +8,7 @@ homepage = "https://github.com/pscosta5/python-project"
 repository = "https://github.com/pscosta5/python-project"
 keywords = ["Python", "template", "hypermodern"]
 authors = ["Paulo S. Costa"]
+documentation = "https://python-project.readthedocs.io"
 
 [tool.poetry.dependencies]
 python = "^3.7"
