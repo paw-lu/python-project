@@ -45,6 +45,7 @@ sphinx = "^2.4.1"
 doc8 = "^0.8.0"
 sphinx-autodoc-typehints = "^1.10.3"
 isort = "^4.3.21"
+codecov = "^2.0.15"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
