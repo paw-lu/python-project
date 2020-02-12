@@ -2,6 +2,7 @@
 
 [![Tests](https://github.com/pscosta5/python-project/workflows/Tests/badge.svg)](https://github.com/pscosta5/python-project/actions?workflow=Tests)
 [![Codecov](https://codecov.io/gh/pscosta5/python-project/branch/master/graph/badge.svg)](https://codecov.io/gh/pscosta5/python-project)
+[![PyPI](https://img.shields.io/pypi/v/hypermodern-python.svg)](https://pypi.org/project/hypermodern-python/)
 
 A Python project template.
 
