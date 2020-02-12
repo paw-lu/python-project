@@ -54,6 +54,7 @@ def lint(session: Session) -> None:
         "flake8-bugbear",
         "flake8-docstrings",
         "flake8-isort",
+        "flake8-rst-docstrings",
         "pytest",
         "pytest-mock",
     )
