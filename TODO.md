@@ -12,19 +12,20 @@
   - ~~doc8~~
 
 - Add Dependabot
-- Add some more mypy options
+- ~~Add some more mypy options~~
+
+- ~~Add doc8 to nox~~
+
+## Updates
+
 - Switch isort to isort[pyproject] when flake8-isort can pick up on those settings
 - Slowly move everything to pyproject as support is added
 
   - isort
   - mypy
 
-- ~~Add doc8 to nox~~
-- Try to upload to Read the Doc via a GitHub action
-  [once supported](https://github.com/readthedocs/readthedocs.org/issues/1083).
-
-## Updates
-
 - Update pytype to 2.8
 - Update doc linters to numpy
 - Switch isort to black_isort when (if?) it releases
+- Try to upload to Read the Doc via a GitHub action
+  [once supported](https://github.com/readthedocs/readthedocs.org/issues/1083).
