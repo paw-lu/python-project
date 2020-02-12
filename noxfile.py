@@ -7,7 +7,7 @@ from nox.sessions import Session
 
 package = "python_project"
 locations = "src", "tests", "noxfile.py", "docs/conf.py"
-nox.options.sessions = "lint", "doc8", "mypy", "pytype", "safety", "tests", "xdoctest"
+nox.options.sessions = "lint", "doc8", "mypy", "pytype", "safety", "tests"
 
 
 def install_with_constraints(session: Session, *args: str, **kwargs: Any) -> None:
