@@ -51,3 +51,4 @@ A Python project template.
 - [GitHub Actions](https://github.com/features/actions)
 - [Codecov](https://codecov.io/)
 - [Read the docs](https://docs.readthedocs.io/)
+- [Dependabot](https://dependabot.com/)

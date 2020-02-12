@@ -11,7 +11,7 @@
   - ~~isort~~
   - ~~doc8~~
 
-- Add Dependabot
+- ~~Add Dependabot~~
 - ~~Add some more mypy options~~
 
 - ~~Add doc8 to nox~~
