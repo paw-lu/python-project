@@ -15,6 +15,8 @@
 - ~~Add some more mypy options~~
 
 - ~~Add doc8 to nox~~
+- GH issue template
+- Sphinx theme
 
 ## Updates
 
